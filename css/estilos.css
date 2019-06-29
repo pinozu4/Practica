@@ -1,0 +1,191 @@
+ *{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+}
+body{
+	overflow-x: hidden;
+}
+.icon_menu{
+	display: none;
+}
+.menu_hambu{
+	display: none;
+}
+.menu{
+	padding: 30px 0px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+.menu a{
+	margin: 0 30px;
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	transition: 0.3s linear;
+	border-bottom: 0px solid transparent;
+}
+.menu a:hover{
+	border-bottom: 1px solid white;
+}
+.item1 img{
+	position: relative;
+	
+}
+.boton{
+	position: absolute;
+	top: 45%;
+	left: 22%;
+	padding: 15px 70px;
+	font-size: 20px;
+	border: 2px solid white;
+	background: transparent;
+	color: white;
+	transition: 0.3s linear;
+}
+.boton:hover{
+	background: white;
+	color: #0984e3;
+}
+.texto{
+	position: absolute;
+	right: 16%;
+	top: 40%;
+	border-left: 2px solid white;
+	padding-left: 35px;
+	color: white;
+}
+
+/* Fin INICIO */
+
+/* Responsive de la secion INICIO */
+
+@media screen and (max-width: 480px){
+	.menu{
+		display: none;
+	}
+	.icon_menu{
+		display: flex;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		z-index: 1;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+	}	
+	.btn_cerrar{
+		font-size: 25px;
+		color: #d63031;
+		cursor: pointer;
+	}
+	.menu_hambu{
+		display: block;
+		position: fixed;
+		top: -275px;
+		left: 0;
+		z-index: 1;
+		background: white;
+		width: 100%;
+		text-align: center;
+		list-style: none;
+	}
+	.menu_hambu li{
+		padding: 15px 0;
+	}
+	.menu_hambu a{
+		color: #0984e3;
+		text-decoration: none;
+	}
+	.texto{
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 20%;
+		text-align: center;
+		border-left: 2px solid transparent;
+		border-bottom: 2px solid white;
+		padding: 20px 25px;
+		color: white;
+	}
+	.boton{
+		position: absolute;
+		top: 80%;
+		display: flex;
+		justify-content: center;
+		padding: 20px 70px;
+		font-size: 20px;
+		border: 2px solid white;
+		background: transparent;
+		color: white;
+		transition: 0.3s linear;
+	}
+
+
+}
+
+/* fin del Responsive de la secion INICIO */
+
+
+
+/* SERVICIOS */
+
+.Sec2 h2{
+	text-align: center;
+	padding: 50px 0;
+
+}
+
+.Sec2{
+	background: #674933;
+}
+
+.padre{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.hijo{
+	flex-basis: 50%;
+	
+}
+
+.cont_hijo{
+	display: flex;
+	margin: 25px;
+	background: white;
+	padding: 15px 0;
+	border-radius: 20px;
+}
+
+.cont_hijo:hover{
+	box-shadow: 0px 0px 20px 1px black;
+}
+
+.hijo img{
+	width: 250px;
+	height: 350px;
+	margin: 0 15px;
+}
+
+.btn_carri{
+	padding: 5px 40px;
+	background: red;
+	color: white;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
+.con{
+	padding: 0 10px;
+}
+
+.reba{
+	color: red;
+	text-decoration: line-through;
+}
